@@ -30,6 +30,24 @@ cd VocabularyParallelism
 
 Note that all the following commands should be run inside the `VocabularyParallelism` directory.
 
+### Experiment Settings
+The **Full Experiment** employs the following settings same as the paper:
+
+| Parameter               | Value                        |
+|-------------------------|------------------------------|
+| MODEL SIZE              | ≈ 4B                         |
+| LAYERS                  | 32                           |
+| ATTENTION HEADS         | 24                           |
+| HIDDEN SIZE             | 3072                         |
+| SEQUENCE LENGTH         | 2048 / 4096                  |
+| MICROBATCH SIZE         | 1                            |
+| NUMBER OF MICROBATCHES  | 128                          |
+| VOCABULARY SIZE         | 32K / 64K / 128K / 256K      |
+
+The **Quick Experiment** focus on a specific case where sequence length is 4096 and vocabulary size is 256k.
+
+We use Megatron-LM on which all methods are implemented to run training experiment.
+
 ### Quick Experiment
 The quick experiment runs all the methods (*baseline*, *redis*, *interlaced*, *vocab-1*, *vocab-2*) on a specific setting in the paper:
 - Sequence Length: 4096
