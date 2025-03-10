@@ -83,24 +83,24 @@ The data should show similar result as:
 
 ```
 Method: baseline
-Peak Memory: 33.7246 GB
-MFU: 26.1384 %
+Peak Memory: 33.7227 GB
+MFU: 28.8833 %
 
 Method: redis
 Peak Memory: 33.7227 GB
-MFU: 44.6888 %
+MFU: 44.6221 %
 
 Method: interlaced
-Peak Memory: 31.207 GB
-MFU: 42.5455 %
+Peak Memory: 30.7168 GB
+MFU: 53.8638 %
 
 Method: vocab-1
 Peak Memory: 27.3848 GB
-MFU: 54.0276 %
+MFU: 53.9708 %
 
 Method: vocab-2
 Peak Memory: 26.1094 GB
-MFU: 53.5131 %
+MFU: 53.5333 %
 ```
 
 </details>
